@@ -1,0 +1,19 @@
+// don't cange this value
+$g-font-size: 16px !default;
+
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+@function rem-convert($val, $to) {
+  //@if type-of($value) == "number"
+  @return $val;
+}
+
+@function rem($val) {
+  @if unit($val) == "" or unit($val) == "px" {
+    @return rem-convert(strip-units($val / $g-font-size), rem) * 1rem;
+  } @else if (unit($val) == "rem") {
+    @return $val;
+  }
+}

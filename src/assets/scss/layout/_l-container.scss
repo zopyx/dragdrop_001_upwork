@@ -1,0 +1,5 @@
+.l-container {
+  & + & {
+    margin-top: rem($g-indent-large);
+  }
+}

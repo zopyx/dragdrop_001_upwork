@@ -1,0 +1,65 @@
+/*
+|--------------------------------------------------------------------------
+| Color sheme
+|--------------------------------------------------------------------------
+|
+| Here is where you can set up color scheme for your application. You
+| should try to use the scheme all time while developing.
+|
+| Note: name of every color must be start with "color-" prefix.
+|
+*/
+
+$g-color-sunflower-yellow: #ffca00;
+$g-color-denim-blue: #24335c;
+$g-color-dark-blue-grey: #23335c;
+$g-color-off-blue: #526cae;
+$g-color-tomato: #e7483a;
+$g-color-forest-green: #579b56;
+$g-color-lightest: #fbfbfb;
+$g-color-light: #f6f6f6;
+$g-color-gainsboro: #efefef;
+$g-color-light-periwinkle: #e3e9fb;
+$g-color-greyish: #bbb;
+$g-color-dark-grey: #4b4e54;
+$g-color-almost-black: #080c17;
+
+/*
+|--------------------------------------------------------------------------
+| Fonts
+|--------------------------------------------------------------------------
+|
+| Here is where you can set up font group for your application. It is
+| desirable that the number of sets is minimal.
+|
+| Note: name of every font group must be start with "font-" prefix.
+|
+*/
+
+$g-font-family: 'Lato', sans-serif;
+
+
+/*
+|--------------------------------------------------------------------------
+| Fonts
+|--------------------------------------------------------------------------
+|
+| Here is where you can set up font group for your application. It is
+| desirable that the number of sets is minimal.
+|
+| Note: name of every font group must be start with "font-" prefix.
+|
+*/
+
+$g-indent-tiny: 5;
+$g-indent-small: 15;
+$g-indent-large: 25;
+$g-indent-huge: 50;
+
+$g-grid-columns-count: 12;
+$susy: (
+  'columns': susy-repeat($g-grid-columns-count),
+  'gutters': 0.5,
+  'spread': 'narrow',
+  'container-spread': 'narrow',
+);

@@ -1,0 +1,23 @@
+.c-heading {
+  color: $g-color-almost-black;
+}
+
+.c-heading--tiny {
+  font-weight: 400;
+  font-size: rem(13);
+}
+
+.c-heading--small {
+  font-weight: 700;
+  font-size: rem(18);
+}
+
+.c-heading--large {
+  font-weight: 700;
+  font-size: rem(28);
+}
+
+.c-heading--huge {
+  font-weight: 700;
+  font-size: rem(36);
+}

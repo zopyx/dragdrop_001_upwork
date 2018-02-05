@@ -1,0 +1,54 @@
+.l-grid {
+  display: grid;
+
+  & + & {
+    margin-top: rem($g-indent-large);
+  }
+}
+
+.l-grid--base {
+  height: 100%;
+  grid-template-columns: 50% 20% auto 20%;
+  grid-template-rows: 20% 20% 40% 10%;
+  grid-template-areas:
+    "main slot1 . assets"
+    "main slot1 . assets"
+    "slot2 slot2 . assets"
+    "additional additional additional additional";
+  grid-gap: 25px;
+}
+
+.l-grid__item {
+  @include padding(rem(15));
+  border: 2px solid rgba(0, 0, 25, 0.04);
+  border-radius: rem(5);
+}
+
+.l-grid__item--main {
+  grid-area: main;
+  overflow: hidden;
+}
+
+.l-grid__item--slot1 {
+  grid-area: slot1;
+}
+
+.l-grid__item--slot2 {
+  grid-area: slot2;
+}
+
+.l-grid__item--assets {
+  grid-area: assets;
+}
+
+.l-grid__item--additional {
+  grid-area: additional;
+  align-self: center;
+}
+
+.l-wrapper {
+  @include margin(null auto);
+  @include padding(rem(15) rem(50));
+  max-width: 1200px;
+  width: 100%;
+}

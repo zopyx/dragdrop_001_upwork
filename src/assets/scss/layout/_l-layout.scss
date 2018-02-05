@@ -1,0 +1,17 @@
+.l-layout {
+  @include padding(null 25px);
+
+  & + & {
+    margin-top: 25px;
+  }
+}
+
+.l-layout--bordered {
+  border-top: solid 1px $g-color-gainsboro;
+}
+
+.l-layout__inner {
+  @include margin(null auto);
+  max-width: rem(1076);
+  height: 100%;
+}
